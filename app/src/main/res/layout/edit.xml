@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@color/white">
+
+  <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="0dp"
+    android:layout_width="fill_parent"
+    android:layout_weight="1">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:padding="8sp"
+      android:orientation="vertical"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content">
+
+      <TextView
+        style="@style/widget"
+        android:text="Title" />
+
+      <EditText
+        style="@style/widget"
+        android:textColor="@color/black"
+        android:id="@+id/title"
+        android:singleLine="true" />
+
+      <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:paddingTop="8sp"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+          android:id="@+id/alarm_checkbox"
+          android:layout_weight="1"
+          android:layout_width="0sp"
+          android:layout_height="wrap_content"
+          android:textColor="@color/black"
+          android:text="Alarm" />
+
+        <Spinner
+          android:id="@+id/occurence_spinner"
+          android:layout_weight="1"
+          android:layout_width="0sp"
+          android:layout_height="wrap_content"
+          android:spinnerMode="dropdown"
+          android:textColor="@color/white"
+          android:background="@color/light_grey"
+          android:entries="@array/occurence" />
+
+      </LinearLayout>
+
+      <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:paddingTop="8sp"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+          android:id="@+id/date_button"
+          android:layout_weight="2"
+          android:layout_width="0sp"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:onClick="onDateClick" />
+
+        <Button
+          android:id="@+id/time_button"
+          android:layout_weight="1"
+          android:layout_width="0sp"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:onClick="onTimeClick" />
+
+      </LinearLayout>
+
+      <!--<TextView
+          android:id="@+id/general"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/blue"
+          android:layout_marginTop="20px"
+          android:text="General"/>
+      <CheckBox
+          android:id="@+id/use24hour"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10px"
+          android:text="Use 24 Hours formate"/>
+
+      <CheckBox
+          android:id="@+id/weekstartonmonday"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10px"
+          android:text="Week Start on Monday"/>
+
+      <TextView
+          android:id="@+id/notification"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10px"
+          android:textColor="@color/blue"
+          android:text="Notification"/>
+
+      <TextView
+          android:id="@+id/sound"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/black"
+          android:layout_marginTop="10px"
+          android:text="Alarm sound"/>
+
+      <TextView
+          android:id="@+id/soundplaytime"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10px"
+          android:textColor="@color/black"
+          android:text="Alarm sound play time"/>
+
+      <CheckBox
+          android:id="@+id/vibrate"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10px"
+          android:text="Vibrate"/>-->
+
+    </LinearLayout>
+
+  </ScrollView>
+
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="8sp"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+      style="@style/edit_button"
+      android:id="@+id/done"
+      android:text="Done"
+      android:onClick="onDoneClick" />
+
+    <Button
+      style="@style/edit_button"
+      android:id="@+id/cancel"
+      android:text="Cancel"
+      android:onClick="onCancelClick" />
+
+  </LinearLayout>
+
+</LinearLayout>
+
